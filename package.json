@@ -1,0 +1,39 @@
+{
+    "name": "ts",
+    "version": "1.0.0",
+    "description": "Advanced Typescript",
+    "main": "index.js",
+    "author": "ivanderk",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.17.1",
+        "chai": "^3.5.0",
+        "express": "^4.15.2",
+        "mongoose": "^4.8.6",
+        "nedb": "^1.8.0",
+        "pug": "^2.0.0-beta11",
+        "tingodb": "^0.5.1",
+        "ts-node": "^2.1.0"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.16.0",
+        "@types/chai": "^3.5.1",
+        "@types/express": "^4.0.35",
+        "@types/mocha": "^2.2.41",
+        "@types/mongoose": "^4.7.8",
+        "@types/nedb": "0.0.31",
+        "@types/node": "^7.0.13",
+        "@types/pug": "^2.0.4",
+        "mocha": "^3.2.0",
+        "nodemon": "^1.11.0",
+        "ts-node": "^3.0.2",
+        "typescript": "^2.2.2"
+    },
+    "scripts": {
+        "build": "tsc -p src/ || true",
+        "test": "node_modules\\.bin\\mocha build/test --require source-map-support/register || true",
+        "clean": "del build",
+        "start": "npm run build:live",
+        "build:live": "nodemon  --exec node_modules\\.bin\\ts-node -- src\\app\\app.ts"
+    }
+}
