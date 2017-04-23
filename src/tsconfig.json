@@ -6,6 +6,10 @@
         "sourceMap": true,
         "outDir": "../build",
         "removeComments": true,
-        "strictNullChecks": true
+
+        "strictNullChecks": true,
+        "alwaysStrict": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true
     }
 }
