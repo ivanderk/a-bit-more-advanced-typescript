@@ -1,8 +1,8 @@
 
 export function hello() {
-  return 'Hello World!'
+  return "Hello World!"
 }
 
-export function hola(){
-  return 'Hola mundo!'
+export function hola() {
+  return "Hola mundo!"
 }

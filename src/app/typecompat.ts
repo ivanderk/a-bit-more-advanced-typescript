@@ -1,28 +1,26 @@
 
 interface Named {
-  name: string;
+  name: string
 }
 class Person {
-  name: string;
-  constructor(name:string){
+  public name: string
+  constructor(name: string) {
     this.name = name
   }
-  
-  //constructor(public name: string){}
+  // constructor(public name: string){}
 }
-let p: Named;
+let p: Named
 // OK, because of structural typing
-p = new Person("Hagard");
+p = new Person("Hagard")
 console.log(p)
 
 // ---------------------------------------------------------
 
 // also with anonymous objects
 let o = { name: "Olaf" , surname: "Leifson"}
-p = o;
+p = o
 
-// compile error 
-//let n : Named =  { name: "Olaf" , surname: "Leifson"}
+// compile error
+// let n : Named =  { name: "Olaf" , surname: "Leifson"}
 
 console.log(p)
-

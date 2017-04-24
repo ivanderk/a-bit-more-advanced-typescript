@@ -1,10 +1,10 @@
 
 export default class {
-    hello() {
-        return 'Hello World!'
+    public hello() {
+        return "Hello World!"
     }
 
-    hola(){
-      return 'Hola mundo!'
+    public hola() {
+      return "Hola mundo!"
     }
 }
