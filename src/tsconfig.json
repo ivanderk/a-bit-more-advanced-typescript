@@ -7,9 +7,11 @@
         "outDir": "../build",
         "removeComments": true,
 
+        "experimentalDecorators": true,
+
         "strictNullChecks": true,
         "alwaysStrict": true,
-        "noImplicitThis": true,
+        "noImplicitThis": false,
         "noImplicitAny": true,
         "noImplicitReturns": true,
 
