@@ -9,6 +9,8 @@ let { type, id } = node
 console.log(type) // "Identifier"
 console.log(id) // "foo”
 
+// compile error when --noImplicitAny is set
+// let showName = function( { id } ){
 let showName = function( { id } : {id:string} ){
   console.log(id)
 } 

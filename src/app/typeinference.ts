@@ -19,5 +19,3 @@ let englishName2 = function(name: string){
 }
 
 //englishName2(1000) //Compile error
-
-
