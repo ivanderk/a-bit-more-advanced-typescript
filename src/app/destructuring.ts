@@ -28,3 +28,34 @@ let showName2 = function( { id, extra}: {id:string, extra:string}){
 /* compile error - this would work in EcmaScript!
 showName2(node)
 */
+
+let input = [1, 2];
+// create NEW variables first and second
+let [first, second] = input;
+console.log(first); // outputs 1
+console.log(second); // outputs 2
+// swap variables
+[first, second] = [second, first];
+
+
+//remaining items in a list using the syntax ...name :
+let [firstelement, ...remainder] = [1, 2, 3, 4];
+console.log(firstelement); // outputs 1
+console.log(remainder); // outputs [ 2, 3, 4 ]
+
+//Nested destructuring of Tuples/arrays. Only have a binding for the named item 
+let justanarray : [string, boolean, number[]] = ["data",true,[3,4]]
+let [,,[,elem2]] = justanarray
+console.log(`Nested element in array ${elem2}`)
+
+//Nested destructuring of objects
+let nestedobject = {anumber: 100, nested: {deep: "ok"}}
+let {nested: {deep}} = nestedobject
+//compile error: only names "on the right"  of the expression are declared
+//console.log(nested)
+console.log(deep)
+//variable renaming; confusing syntax!
+let {nested: {deep: deepest}} = nestedobject
+console.log(deepest)
+
+

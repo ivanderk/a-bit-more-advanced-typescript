@@ -1,6 +1,8 @@
 
 export function hello() {
-  return 'Hello World!';
+  return 'Hello World!'
 }
 
-export default hello;
+export function hola(){
+  return 'Hola mundo!'
+}

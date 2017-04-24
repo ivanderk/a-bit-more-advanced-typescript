@@ -1,7 +1,7 @@
 import * as express from "express";
 import * as Datastore from "nedb";
 
-import hello from './services';
+import {hello} from './services';
 
 let app = express();
 let db = new Datastore();
